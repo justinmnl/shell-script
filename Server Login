@@ -1,0 +1,10 @@
+#!/usr/bin/expect
+
+spawn ssh user@IP  -p1234
+  expect "password:
+    send "\}Hd834refsFL\?ljMDFcs345\r"
+  expect "#"
+    send "su - \r"
+  expect "Password:"
+    send "skFLKLKEl\@HUas89fsIOidfn\$r\#\r"
+interact
