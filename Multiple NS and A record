@@ -1,0 +1,9 @@
+#!/bin/bash
+for domain in `cat input.txt`
+do
+        echo $domain >> results.txt
+        echo $domain
+             `dig +short a $domain >> results.txt`
+             `dig +short ns $domain >> results.txt`
+        echo "-----------------------" >> results.txt
+done
