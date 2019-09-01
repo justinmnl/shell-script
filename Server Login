@@ -7,4 +7,5 @@ spawn ssh user@IP  -p1234
     send "su - \r"
   expect "Password:"
     send "skFLKLKEl\@HUas89fsIOidfn\$r\#\r"
+    
 interact
