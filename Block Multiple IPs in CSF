@@ -1,0 +1,9 @@
+#! /bin/bash
+for IP in `cat IP_LIST`
+do
+   csf -d $IP
+echo " "
+echo "- - - - - - - -"
+
+echo " "
+done
